@@ -47,10 +47,11 @@
   justify-content: space-between;
 }
 
-.sidebar__stats > p {
+.sidebar__stat > p {
   clear: gray;
   font-size: 1.3rem;
   font-weight: 600;
+  text-align: left;
 }
 
 .sidebar__stats {
