@@ -24,13 +24,13 @@ function Header() {
       </div>
       <div className="header__right">
         <HeaderOption Icon={HomeIcon} title="Home" />
-        <HeaderOption Icon={SupervisorAccountIcon} title="My network" />
-        <HeaderOption Icon={BusinessCenterIcon} title="Jobs" />
-        <HeaderOption Icon={ChatIcon} title="Messaging" />
-        <HeaderOption Icon={NotificationsIcon} title="Notifications" />
+        <HeaderOption Icon={SupervisorAccountIcon} title="Mijn netwerk" />
+        <HeaderOption Icon={BusinessCenterIcon} title="Vacatures" />
+        <HeaderOption Icon={ChatIcon} title="Berichten" />
+        <HeaderOption Icon={NotificationsIcon} title="Meldingen" />
         <HeaderOption
           avatar="https://media-exp1.licdn.com/dms/image/C5603AQErXLMQS0aPxA/profile-displayphoto-shrink_100_100/0/1588160001902?e=1634774400&v=beta&t=0feICRbQybEsh99OVQBX2zFQSUPy46u5W3zAmk-4jhQ"
-          title="Me"
+          title="Ik"
         />
       </div>
     </div>
