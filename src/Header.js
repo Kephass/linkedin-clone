@@ -7,8 +7,17 @@ import SupervisorAccountIcon from "@material-ui/icons/SupervisorAccount";
 import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
 import ChatIcon from "@material-ui/icons/Chat";
 import NotificationsIcon from "@material-ui/icons/Notifications";
+import { useDispatch } from "react-redux";
+import { logout } from "./features/userSlice";
+import { auth } from "./firebase";
 
-export default function Header() {
+function Header() {
+  const dispatch = useDispatch();
+
+  const logoutOfApp = () => {
+    dispatch(logout());
+    auth.signOut();
+  };
   return (
     <div className="header">
       <div className="header__left">
@@ -19,7 +28,7 @@ export default function Header() {
 
         <div className="header__search">
           <SearchIcon />
-          <input type="text" />
+          <input placeholder="Zoeken" type="text" />
         </div>
       </div>
       <div className="header__right">
@@ -28,11 +37,10 @@ export default function Header() {
         <HeaderOption Icon={BusinessCenterIcon} title="Vacatures" />
         <HeaderOption Icon={ChatIcon} title="Berichten" />
         <HeaderOption Icon={NotificationsIcon} title="Meldingen" />
-        <HeaderOption
-          avatar="https://media-exp1.licdn.com/dms/image/C5603AQErXLMQS0aPxA/profile-displayphoto-shrink_100_100/0/1588160001902?e=1634774400&v=beta&t=0feICRbQybEsh99OVQBX2zFQSUPy46u5W3zAmk-4jhQ"
-          title="Ik"
-        />
+        <HeaderOption avatar="true" title="Ik" onClick={logoutOfApp} />
       </div>
     </div>
   );
 }
+
+export default Header;

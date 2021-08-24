@@ -77,22 +77,26 @@
   margin-top: 1rem;
 }
 
-.sidebar__bottom > p {
+.sidebar__bottom > .sidebar__bottom-tab {
+  margin-bottom: 2rem;
+}
+
+.sidebar__bottom > .sidebar__bottom-tab > p {
   font-size: 1.3rem;
   padding-bottom: 1rem;
 }
 
-.sidebar__recentItem {
+.sidebar__items {
   display: flex;
   font-size: 1.3rem;
   color: gray;
   font-weight: bolder;
   cursor: pointer;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
   padding: 0.5rem;
 }
 
-.sidebar__recentItem:hover {
+.sidebar__items:hover {
   background-color: whitesmoke;
   border-radius: 1rem;
   cursor: pointer;
@@ -102,4 +106,19 @@
 .sidebar__hash {
   margin-right: 1rem;
   margin-left: 0.5rem;
+}
+
+.sidebar__bottom-viewMore {
+  font-size: 1.3rem;
+  font-weight: 700 !important;
+  cursor: pointer;
+  color: gray;
+  padding-left: 3rem;
+}
+
+.sidebar__bottom-viewMore:hover {
+  background-color: whitesmoke;
+  border-radius: 1rem;
+  cursor: pointer;
+  color: black;
 }
